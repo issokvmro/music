@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_file, Response, stream_with_cont
 from flask_cors import CORS
 from unified_automator import DABClient, settings
 import os
+import tempfile
 import shutil
 import uuid
 import time
@@ -23,7 +24,8 @@ CORS(app)
 # Ensure download dir exists
 settings.DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
 # Use system temp dir to avoid triggering Flask reloader on file creation
-TEMP_DIR = Path(os.environ.get('TEMP')) / "music_web_bulk"
+# Use system temp dir to avoid triggering Flask reloader on file creation
+TEMP_DIR = Path(tempfile.gettempdir()) / "music_web_bulk"
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
 
 # Global Client (Only for single search/download speed enhancement)
@@ -326,8 +328,8 @@ def bulk_result(job_id):
         
     return send_file(job['zip_path'], as_attachment=True, download_name="songs.zip")
 
-#if __name__ == '__main__':
-#    app.run(debug=True, port=5000, threaded=True)
 if __name__ == '__main__':
+    app.run(debug=True, port=5000, threaded=True)
+#if __name__ == '__main__':
     # host='0.0.0.0' allows external connections
-    app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
+    #app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)

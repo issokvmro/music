@@ -833,3 +833,7 @@
 2026-01-01 03:46:20,112 - werkzeug - INFO - 192.168.0.137 - - [01/Jan/2026 03:46:20] "GET /api/search?q=Ponniyin%20selvan HTTP/1.1" 200 -
 2026-01-01 03:46:34,615 - UnifiedAuto - INFO - Downloading: Composition Based on a Dagarvani Tradition Dhrupad - Veera Raja Veera.flac
 2026-01-01 03:46:41,625 - werkzeug - INFO - 192.168.0.137 - - [01/Jan/2026 03:46:41] "POST /api/download HTTP/1.1" 200 -
+2026-01-01 03:55:41,445 - werkzeug - INFO -  * Detected change in 'C:\\Users\\itsme\\Desktop\\music web\\server.py', reloading
+2026-01-01 03:55:41,588 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-01-01 03:55:42,270 - werkzeug - WARNING -  * Debugger is active!
+2026-01-01 03:55:42,273 - werkzeug - INFO -  * Debugger PIN: 484-140-215
