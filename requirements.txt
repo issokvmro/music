@@ -1,0 +1,16 @@
+httpx
+mutagen
+requests>=2.31.0
+watchdog>=3.0.0
+torrentool>=1.1.1
+typer[all]>=0.9.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+rich>=13.0.0
+dropbox
+curl_cffi>=0.5.10
+qbittorrent-api>=2023.7.52
+bencode.py>=4.0.0
+flask
+flask-cors
+beautifulsoup4
