@@ -329,7 +329,5 @@ def bulk_result(job_id):
     return send_file(job['zip_path'], as_attachment=True, download_name="songs.zip")
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000, threaded=True)
-#if __name__ == '__main__':
-    # host='0.0.0.0' allows external connections
-    #app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
+     host='0.0.0.0' allows external connections (Required for AWS/Ngrok)
+    app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
