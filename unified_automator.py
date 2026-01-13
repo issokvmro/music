@@ -74,7 +74,7 @@ class Config:
 
     # System Config
     DOWNLOAD_DIR = Path.cwd() / "downloads"
-    USER_AGENT = "DAB-Downloader-CLI/1.0"
+    USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1337.0.0.0 Safari/537.36"
     REQUEST_TIMEOUT = 30
 
 settings = Config()
@@ -115,6 +115,7 @@ class DABClient:
             "Origin": settings.DAB_BASE_URL,
             "Accept": "application/json, text/plain, */*",
             "Accept-Language": "en-US,en;q=0.9",
+            "User-Agent": settings.USER_AGENT,
         })
 
     def login(self) -> Dict:
