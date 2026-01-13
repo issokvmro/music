@@ -47,7 +47,7 @@ loaded = load_dotenv(dotenv_path=env_path, override=True)
 
 class Config:
     # DAB Config
-    DAB_BASE_URL = "https://dab.yeet.su"
+    DAB_BASE_URL = "https://dabmusic.xyz"
     DAB_API_URL = f"{DAB_BASE_URL}/api"
     DAB_EMAIL = os.getenv("DAB_EMAIL") or os.getenv("DAB_USERNAME")
     DAB_PASSWORD = os.getenv("DAB_PASSWORD")
