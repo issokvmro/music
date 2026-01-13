@@ -837,3 +837,5 @@
 2026-01-01 03:55:41,588 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
 2026-01-01 03:55:42,270 - werkzeug - WARNING -  * Debugger is active!
 2026-01-01 03:55:42,273 - werkzeug - INFO -  * Debugger PIN: 484-140-215
+2026-01-13 15:16:42,446 - UnifiedAuto - INFO - Logging in to DAB as tested0pvmro@gmail.com...
+2026-01-13 15:16:43,694 - UnifiedAuto - INFO - DAB Login successful.

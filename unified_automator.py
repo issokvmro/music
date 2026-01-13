@@ -109,10 +109,12 @@ def check_config():
 class DABClient:
     def __init__(self):
         self.cookies = {}
-        self.session = cffi_requests.Session(impersonate="chrome120")
+        self.session = cffi_requests.Session(impersonate="chrome124")
         self.session.headers.update({
             "Referer": f"{settings.DAB_BASE_URL}/",
             "Origin": settings.DAB_BASE_URL,
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "en-US,en;q=0.9",
         })
 
     def login(self) -> Dict:
